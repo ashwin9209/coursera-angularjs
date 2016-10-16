@@ -8,8 +8,11 @@
 	</head>
 
 	<body>
+		<h1>Introductory AngularJS</h1>
 		<div ng-controller="firstController">
-
+			{{sayHello()}}
+		<input type="text" ng-model="name">
+		<p>Type anything into the input box and watch the value change here: {{name}}</p>
 		</div>
 	</body>
 </html>
