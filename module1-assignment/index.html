@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Coursera AngularJS Module 1 Coding Assignment</title>
+		<script src="scripts/angular.min.js"></script>
+		<script src="scripts/app.js"></script>
+	</head>
+
+	<body ng-app="Module1Assignment">
+		<h1>Diet Controller</h1>
+		<div ng-controller="DietController">
+		<input type="text" ng-model="foodItems" ng-focus="initDiet();">
+		<button ng-click="checkDiet();">Check if too much</button>
+		<p style="color: {{textColor}};">{{dietFeedback}}</p>
+		</div>
+	</body>
+</html>
